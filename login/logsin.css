@@ -1,0 +1,13 @@
+#logsinmain{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    margin: auto;
+}
+#logsinlog , #logsinsignup{
+    height: 50px;
+    border: 1px solid red;
+    width: 35%;
+    text-align: center;
+    
+}
