@@ -64,8 +64,8 @@
       "bankAccNumber": "testACC",
       "bankIFSC": "testIFSC",
       "id": 2,
-      "donated": 7000,
-      "backers": 3
+      "donated": 10000,
+      "backers": 4
     },
     {
       "title": "q",
@@ -129,6 +129,34 @@
       "id": 4,
       "donated": 1000,
       "backers": 1
+    },
+    {
+      "title": "Music event",
+      "punchline": "famous singer",
+      "web": "wertr",
+      "city": "Bangalore",
+      "category": "Music",
+      "fundFor": "Individual",
+      "goal": "25000",
+      "goalBreakName": "fee of the singer",
+      "goalBreak": "25000",
+      "start": "2021-07-25",
+      "end": "2021-08-15",
+      "rewardAmount": "100",
+      "rewardName": "Reward",
+      "rewardDescription": "Desrciption",
+      "rewardDate": "2021-08-16",
+      "rewardQuantity": "1",
+      "story": "This is the story ",
+      "friendNamw": "Singer",
+      "friendAbout": "Famous singer",
+      "nameAsPerBank": "Akshay",
+      "bankName": "SBI",
+      "bankAccNumber": "1234567895",
+      "bankIFSC": "SbID56566",
+      "id": 5,
+      "donated": 8000,
+      "backers": 2
     }
   ],
   "posts": [
@@ -146,7 +174,7 @@
     }
   ],
   "profile": {
-    "name": "Akshay"
+    "name": null
   },
   "project": [
     {
