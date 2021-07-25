@@ -12,8 +12,8 @@ export function Navmid({ h }) {
           }}
         >
           <h1>{h}</h1>
-          <h1>curate</h1>
-          <h1>connect</h1>
+          <h1>Curate</h1>
+          <h1>Connect</h1>
           <h3
             style={{
               color: "white",
@@ -23,7 +23,7 @@ export function Navmid({ h }) {
               padding: "5px 10px",
             }}
           >
-            get started
+            Get Started
           </h3>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-// import { Footer } from "./footer/Footer";
+import { Footer } from "./footer/Footer";
 const Cate = styled.div`
   width: 70%;
   margin: 50px auto;
@@ -78,6 +78,12 @@ const Cate = styled.div`
 export default function Landing() {
   return (
     <div>
+      <div>
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/catapooolt/static/websitebanner.jpg"
+          alt=""
+        />
+      </div>
       <Cate>
         <div>
           <h2>Start a Fundraiser in the following CATEGORY</h2>
@@ -227,7 +233,13 @@ export default function Landing() {
           <p>START-UPs</p>
         </div>
       </Cate>
-      {/* <Footer /> */}
+      <div>
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/catapooolt/static/catapooolt_holosuit_banner.jpg"
+          alt=""
+        />
+      </div>
+      <Footer />
     </div>
   );
 }

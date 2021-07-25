@@ -18,19 +18,16 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          Dashboard
           <Landing />
         </Route>
         <Route path="/login">
-          Hello Login
+          Hello User
           <LogSign />
         </Route>
         <Route path="/search">
-          Hello Search
           <Search />
         </Route>
         <Route path="/how">
-          How It Works
           <First />
         </Route>
         <Route path="/create">

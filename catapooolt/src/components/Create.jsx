@@ -181,7 +181,7 @@ export default function Create() {
         >
           Campaign Title
         </button>
-        {global.title ? `<h2>${global.title}</h2>` : null}
+        {global.title ? <h2>{global.title}</h2> : null}
         <button
           onClick={() => {
             setBtn2(true);
@@ -206,7 +206,7 @@ export default function Create() {
         >
           INR Goal
         </button>
-        {global.goal ? `<h3>INR ${global.goal}</h3>` : null}
+        {global.goal ? <h3>INR {global.goal}</h3> : null}
         <button
           onClick={() => {
             setDuration(true);
@@ -214,8 +214,8 @@ export default function Create() {
         >
           Duration
         </button>
-        {global.start ? `<h4>Starts on ${global.start}</h4>` : null}
-        {global.end ? `<h4>Ends on ${global.end}</h4>` : null}
+        {global.start ? <h4>Starts on {global.start}</h4> : null}
+        {global.end ? <h4>Ends on {global.end}</h4> : null}
         <button
           onClick={() => {
             setReward(true);

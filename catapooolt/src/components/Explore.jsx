@@ -46,7 +46,7 @@ export default function Explore() {
 
   return (
     <div>
-      <button onClick={makeGet}>Click</button>
+      {/* <button onClick={makeGet}>Click</button> */}
       <Divi>
         {glob.map((g) => (
           <CardExp g={g} key={g.id} />
