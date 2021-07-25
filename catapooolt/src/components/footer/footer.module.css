@@ -14,12 +14,11 @@ a {
   padding-left: 10px;
 }
 
-/* img{
-    height: 15px;
-    width: 15px;
-    margin-right: 10px;
-
-} */
+img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
 a {
   /* border: 1px solid springgreen; */
   display: flex;
