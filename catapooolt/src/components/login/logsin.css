@@ -1,0 +1,17 @@
+#logsinmain {
+  height: 500px;
+  width: 400px;
+  /* border: 1px solid black; */
+  margin: auto;
+  box-shadow: 0 0 15px -4px #8a9ea9;
+}
+#logsinlog,
+#logsinsignup {
+  height: 50px;
+  width: 35%;
+  text-align: center;
+}
+#logsinlog:hover,
+#logsinsignup:hover {
+  background-color: rgba(22, 155, 191, 0.8);
+}
