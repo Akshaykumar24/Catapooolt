@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Footer } from "./footer/Footer";
+import { Caruus } from "./Carousel/Caruus";
 const Cate = styled.div`
   width: 70%;
   margin: 50px auto;
@@ -78,12 +79,7 @@ const Cate = styled.div`
 export default function Landing() {
   return (
     <div>
-      <div>
-        <img
-          src="https://s3.ap-south-1.amazonaws.com/catapooolt/static/websitebanner.jpg"
-          alt=""
-        />
-      </div>
+      <Caruus />
       <Cate>
         <div>
           <h2>Start a Fundraiser in the following CATEGORY</h2>
@@ -239,6 +235,7 @@ export default function Landing() {
           alt=""
         />
       </div>
+
       <Footer />
     </div>
   );

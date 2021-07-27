@@ -82,7 +82,7 @@ const Revcard = styled.div`
 `;
 Modal.defaultStyles.overlay.backgroundColor = "#f0eeee";
 Modal.defaultStyles.overlay.opacity = "1";
-Modal.defaultStyles.content.width = "500px";
+// Modal.defaultStyles.content.width = "500px";
 Modal.defaultStyles.content.margin = "auto";
 Modal.defaultStyles.content.opacity = "1";
 
