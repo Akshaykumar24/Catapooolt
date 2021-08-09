@@ -1,5 +1,5 @@
 export default function Donate(g) {
-  console.log(g);
+  //console.log(g);
   return (
     <div>
       Hello Component

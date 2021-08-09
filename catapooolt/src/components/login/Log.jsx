@@ -14,10 +14,10 @@ export function Log() {
 
   const handleOnLogin = (e) => {
     e.preventDefault();
-    console.log(getdata);
+    // console.log(getdata);
     //   getdata.map((el) => {
     for (let i = 0; i < getdata.length; i++) {
-      console.log(getdata[i].org + "all the time");
+      //console.log(getdata[i].org + "all the time");
       if (getdata[i].email === email && getdata[i].password === password) {
         alert("Logged in");
         setvalid(true);
@@ -32,20 +32,20 @@ export function Log() {
     // });
 
     valid ? alert("logged in") : alert("Password or email is wrong");
-    console.log(user + "supposed to be changed");
+    //console.log(user + "supposed to be changed");
     // valid ? chan() : console.log("Name didnt change");
   };
 
   function getdatafun() {
     axios.get("http://localhost:3001/project").then((res) => {
-      console.log(res);
+      //console.log(res);
       setgetdata(res.data);
     });
   }
   useEffect(() => {
     getdatafun();
     axios.get("http://localhost:3001/profile").then((res) => {
-      console.log(res);
+      // console.log(res);
       setUser(res.data.name);
       if (user !== null) {
         setvalid(true);
@@ -57,20 +57,20 @@ export function Log() {
   }, [user]);
 
   const chan = (a) => {
-    console.log(a);
+    //console.log(a);
     let n = { name: a };
     axios.patch("http://localhost:3001/profile", n).then((res) => {
-      console.log(res.data);
+      //console.log(res.data);
     });
   };
 
   const logOut = () => {
-    console.log(valid);
+    // console.log(valid);
     let x = window.confirm("You want to Log-Out");
     if (x) {
       let n = { name: null };
       axios.patch("http://localhost:3001/profile", n).then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
       });
     }
   };

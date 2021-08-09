@@ -122,7 +122,7 @@ export default function Create() {
       }
     };
     reader.readAsDataURL(file);
-    console.log(url, reader.result, reader.readyState);
+    //console.log(url, reader.result, reader.readyState);
     //setImag(url);
   };
   const thankUpload = (thank) => {
@@ -133,7 +133,7 @@ export default function Create() {
       }
     };
     reader.readAsDataURL(thankFile);
-    console.log(thank);
+    //console.log(thank);
     //setImag(url);
   };
   const docUpload = (doc) => {
@@ -144,7 +144,7 @@ export default function Create() {
       }
     };
     reader.readAsDataURL(docFile);
-    console.log(doc);
+    //console.log(doc);
     //setImag(url);
     //setGlobal({ ...global, docIMG: doc });
   };
@@ -165,10 +165,10 @@ export default function Create() {
       documentIMG: doc,
       donated: 0,
     });
-    console.log(global);
+    //console.log(global);
 
     axios.post("http://localhost:3001/funds", global).then((res) => {
-      console.log(res);
+      //console.log(res);
     });
   };
   return (
@@ -394,7 +394,7 @@ export default function Create() {
           </select>
           <button
             onClick={() => {
-              console.log(global);
+              //console.log(global);
             }}
           >
             Save

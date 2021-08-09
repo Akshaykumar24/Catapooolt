@@ -90,11 +90,11 @@ export default function CardExp({ g }) {
     } else {
       glob.backers = Number(glob.backers) + 1;
     }
-    console.log(don, glob.donated, glob.backers, glob);
+    //console.log(don, glob.donated, glob.backers, glob);
     // setGlob({ ...glob, donated: don });
     let dab = { donated: Number(glob.donated), backers: Number(glob.backers) };
     axios.patch(`http://localhost:3001/funds/${g.id}`, dab).then((res) => {
-      console.log(res);
+      // console.log(res);
     });
   };
   return (
