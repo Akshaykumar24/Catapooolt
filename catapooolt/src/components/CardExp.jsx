@@ -93,9 +93,11 @@ export default function CardExp({ g }) {
     //console.log(don, glob.donated, glob.backers, glob);
     // setGlob({ ...glob, donated: don });
     let dab = { donated: Number(glob.donated), backers: Number(glob.backers) };
-    axios.patch(`http://localhost:3001/funds/${g.id}`, dab).then((res) => {
-      // console.log(res);
-    });
+    axios
+      .patch(`https://first-server24.herokuapp.com/funds/${g.id}`, dab)
+      .then((res) => {
+        // console.log(res);
+      });
   };
   return (
     <div>

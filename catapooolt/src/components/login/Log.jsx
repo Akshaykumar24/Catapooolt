@@ -37,14 +37,14 @@ export function Log() {
   };
 
   function getdatafun() {
-    axios.get("http://localhost:3001/project").then((res) => {
+    axios.get("https://first-server24.herokuapp.com/project").then((res) => {
       //console.log(res);
       setgetdata(res.data);
     });
   }
   useEffect(() => {
     getdatafun();
-    axios.get("http://localhost:3001/profile").then((res) => {
+    axios.get("https://first-server24.herokuapp.com/profile").then((res) => {
       // console.log(res);
       setUser(res.data.name);
       if (user !== null) {
@@ -53,15 +53,17 @@ export function Log() {
     });
 
     //console.log(getdata);
-    // axios.delete("http://localhost:3001/project/2");
+    // axios.delete("https://first-server24.herokuapp.com/project/2");
   }, [user]);
 
   const chan = (a) => {
     //console.log(a);
     let n = { name: a };
-    axios.patch("http://localhost:3001/profile", n).then((res) => {
-      //console.log(res.data);
-    });
+    axios
+      .patch("https://first-server24.herokuapp.com/profile", n)
+      .then((res) => {
+        //console.log(res.data);
+      });
   };
 
   const logOut = () => {
@@ -69,9 +71,11 @@ export function Log() {
     let x = window.confirm("You want to Log-Out");
     if (x) {
       let n = { name: null };
-      axios.patch("http://localhost:3001/profile", n).then((res) => {
-        // console.log(res.data);
-      });
+      axios
+        .patch("https://first-server24.herokuapp.com/profile", n)
+        .then((res) => {
+          // console.log(res.data);
+        });
     }
   };
 

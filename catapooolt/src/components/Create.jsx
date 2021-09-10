@@ -167,9 +167,11 @@ export default function Create() {
     });
     //console.log(global);
 
-    axios.post("http://localhost:3001/funds", global).then((res) => {
-      //console.log(res);
-    });
+    axios
+      .post("https://first-server24.herokuapp.com/funds", global)
+      .then((res) => {
+        //console.log(res);
+      });
   };
   return (
     <Wrap>

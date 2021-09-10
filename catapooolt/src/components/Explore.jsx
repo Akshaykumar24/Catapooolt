@@ -23,7 +23,7 @@ export default function Explore() {
 
   const makeGet = () => {
     axios
-      .get(`http://localhost:3001/funds?_limit=3&_page=${page}`)
+      .get(`https://first-server24.herokuapp.com/funds?_limit=3&_page=${page}`)
       .then((res) => {
         // console.log(res);
         setCatch(res.data);

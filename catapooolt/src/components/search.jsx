@@ -9,7 +9,9 @@ export default function Search() {
   const [page, setPage] = useState(1);
   const makeGet = () => {
     axios
-      .get(`http://localhost:3001/funds?q=${ser}&_limit=3&_page=${page}`)
+      .get(
+        `https://first-server24.herokuapp.com/funds?q=${ser}&_limit=3&_page=${page}`
+      )
       .then((res) => {
         // console.log(res);
         setCatch(res.data);

@@ -6,7 +6,7 @@ export default function Nav() {
   // const [ser, setSer] = useState();
   const [me, setMe] = useState();
   useEffect(() => {
-    axios.get("http://localhost:3001/profile").then((res) => {
+    axios.get("https://first-server24.herokuapp.com/profile").then((res) => {
       setMe(res.data.name);
     });
   }, []);

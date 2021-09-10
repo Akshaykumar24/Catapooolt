@@ -1,33 +1,33 @@
-import React from "react";
-// import ReactDOM from "react-dom";
-import { Editor, EditorState } from "draft-js";
-import "draft-js/dist/Draft.css";
+// import React from "react";
+// // import ReactDOM from "react-dom";
+// // import { Editor, EditorState } from "draft-js";
+// // import "draft-js/dist/Draft.css";
 
-export default function MyEditor() {
-  const [editorState, setEditorState] = React.useState(
-    EditorState.createEmpty()
-  );
+// export default function MyEditor() {
+//   const [editorState, setEditorState] = React.useState(
+//     EditorState.createEmpty()
+//   );
 
-  const editor = React.useRef(null);
+//   const editor = React.useRef(null);
 
-  function focusEditor() {
-    editor.current.focus();
-  }
+//   function focusEditor() {
+//     editor.current.focus();
+//   }
 
-  React.useEffect(() => {
-    focusEditor();
-  }, []);
+//   React.useEffect(() => {
+//     focusEditor();
+//   }, []);
 
-  return (
-    <div onClick={focusEditor}>
-      <Editor
-        ref={editor}
-        editorState={editorState}
-        toolbarClassName="toolbarClassName"
-        wrapperClassName="wrapperClassName"
-        editorClassName="editorClassName"
-        onChange={(editorState) => setEditorState(editorState)}
-      />
-    </div>
-  );
-}
+//   return (
+//     <div onClick={focusEditor}>
+//       <Editor
+//         ref={editor}
+//         editorState={editorState}
+//         toolbarClassName="toolbarClassName"
+//         wrapperClassName="wrapperClassName"
+//         editorClassName="editorClassName"
+//         onChange={(editorState) => setEditorState(editorState)}
+//       />
+//     </div>
+//   );
+// }

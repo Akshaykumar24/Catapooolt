@@ -22,12 +22,17 @@ export function Sign() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     console.log(user);
-    if(user.org === "" || user.num === "" || user.password === "" || user.email === ""){
-      alert("you have to fil every section")
-      return 
+    if (
+      user.org === "" ||
+      user.num === "" ||
+      user.password === "" ||
+      user.email === ""
+    ) {
+      alert("you have to fil every section");
+      return;
     }
     axios
-      .post("http://localhost:3001/project", user)
+      .post("https://first-server24.herokuapp.com/project", user)
       .then((e) => {
         console.log(e);
         alert("Account Created Succesfully, Please Log-In to Continue");
